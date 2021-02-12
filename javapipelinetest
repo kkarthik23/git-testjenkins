@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               pwsh("mvn --version")
+               powershell("mvn --version")
             }
         }
     }
