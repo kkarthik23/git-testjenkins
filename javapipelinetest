@@ -5,7 +5,7 @@ pipeline {
             steps {
                
                
-               powershell(returnStatus: true, script: 'mvn --version')
+               powershell(returnStatus: true, script: 'ipconfig')
             }
         }
     }
