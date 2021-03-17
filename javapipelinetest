@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                
-               powershell 'mvn --version'
+               
+               powershell(returnStatus: true, script: 'mvn --version')
             }
         }
     }
