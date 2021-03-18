@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                
+               bat 'mvn --version'
                
                powershell(returnStatus: true, script: 'ipconfig')
             }
