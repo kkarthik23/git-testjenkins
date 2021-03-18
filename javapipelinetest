@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                
-               bat 'mvn --version'
+               bat 'python --version'
                
                powershell(returnStatus: true, script: 'ipconfig')
             }
